@@ -1,0 +1,12 @@
+1.  A header file which allow us to make integer variables with custom size.
+2.  These functions are cross platform implementation of standard data type to be used with Bitmap.
+3.  BYTE: 1byte; DWORD: 4byte; LONG: 4byte; WORD: 2byte
+4.  bftype
+5.  bfSize is total size of file, whereas biSize is total size of info header.
+6.  biheight negative means that the file is written upside-down,i.e., bottom row contain information about top pixels of image.
+7.  biBitCount
+8.  IF for somereason, fopen is not able to open the file then it will return 1.
+9.  As we are going through the file pixel by pixel, we always need to see 1 pixel,i.e., 1 rgb triple so its always 1. 
+10. 3
+11. fseek basically works as a cursor while freading the file to keep track of the position where we are reading.
+12. SEEK_CUR is the pointer to the current position in the file that we're reading using fread.
